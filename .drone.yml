@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: node:latest
+    image: mhart/alpine-node:7.6.0
     commands:
       - apk add --no-cache make git python gcc g++
       - npm install yarn --global
