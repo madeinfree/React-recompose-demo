@@ -17,7 +17,7 @@ const enhance = compose(
 const Index = enhance(({ counter, increatement, decreatement }) =>
   <div>
     <p>{ counter }</p>
-    <button onClick={increatement}>++++</button>
+    <button onClick={increatement}>++</button>
     <button onClick={decreatement}>--</button>
   </div>
 )
