@@ -1,0 +1,12 @@
+pipeline:
+  build:
+    image: node:latest
+    commands:
+      - npm install yarn --global
+      - yarn
+      - npm run build
+matrix:
+  NODE_VERSION:
+    - latest
+    - "7"
+    - "6"
